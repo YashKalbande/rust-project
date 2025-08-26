@@ -1,0 +1,12 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: rust-query-service
+    url: http://rust_query_service:8080
+    routes:
+      - name: rust-query-route
+        paths:
+          - /api/query
+        methods:
+          - POST
